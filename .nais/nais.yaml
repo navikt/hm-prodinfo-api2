@@ -1,0 +1,40 @@
+apiVersion: 'nais.io/v1alpha1'
+kind: 'Application'
+metadata:
+  name: hm-prodinfo-api2
+  namespace: teamdigihot
+  labels:
+    team: teamdigihot
+spec:
+  image: {{image}}
+  team: teamdigihot
+  port: 5000
+  replicas:
+    min: 2
+    max: 4
+    cpuThresholdPercentage: 90
+  liveness:
+    path: /internal/isAlive
+    initialDelay: 5
+  readiness:
+    path: /internal/isReady
+    initialDelay: 5
+  ingresses:
+    - {{ ingress }}
+  envFrom:
+    - secret: hjelpemidlerprodinfo-api
+  prometheus:
+    enabled: true
+    path: /metrics
+  env: 
+    - name: DB_ADMIN_USERNAME
+      value: SrvHMDLese
+    - name: DB_DATABASENAME
+      value: HMSDB
+    - name: DB_HOSTNAME
+      value: {{ db_hostname }}
+    - name: DB_USER_DOMAIN
+      value: {{ db_user_domain }}
+    - name: WEB_HOST_PORT
+      value: "5000"
+        

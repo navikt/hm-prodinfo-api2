@@ -1,0 +1,6 @@
+.git
+.gitignore
+.config
+.npm
+.vscode
+node_modules

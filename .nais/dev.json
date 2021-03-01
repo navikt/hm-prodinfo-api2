@@ -1,0 +1,5 @@
+{
+    "ingress": "https://hm-prodinfo-api2.dev.intern.nav.no",
+    "db_user_domain": "OERA-Q",
+    "db_hostname": "B31DBVW005.OERA-Q.LOCAL"
+  }

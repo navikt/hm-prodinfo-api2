@@ -1,0 +1,5 @@
+{
+    "ingress": "https://hm-prodinfo-api2.intern.nav.no",
+    "db_user_domain": "ADEO",
+    "db_hostname": "10.49.0.68"
+  }
