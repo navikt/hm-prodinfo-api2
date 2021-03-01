@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 const sql = require("mssql/tedious")
 const fetch = require("node-fetch")
 
@@ -24,9 +24,9 @@ const poolPromise = connectDB()
 
 async function connectDB() {
   console.log("Waiting for istio proxy")
-/*
+
   await waitForIstioProxy()
-  console.log("Istio proxy should be ready")*/
+  console.log("Istio proxy should be ready")
 
   return new sql.ConnectionPool(config)
     .connect()

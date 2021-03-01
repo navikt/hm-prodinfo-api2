@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 var app = require('../app');
 var debug = require('debug')('hm-produktinfo-api2');
 var http = require('http');
