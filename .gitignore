@@ -113,6 +113,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.idea
 /.idea/.gitignore
 /.idea/hm-prodinfo-api2-poc.iml
 /.idea/misc.xml
