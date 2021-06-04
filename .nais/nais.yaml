@@ -13,6 +13,17 @@ spec:
     min: 2
     max: 4
     cpuThresholdPercentage: 90
+  accessPolicy:
+    inbound:
+      rules:
+        - application: hm-grunndata-api
+          namespace: teamdigihot
+          cluster: dev-gcp
+    outbound:
+      rules:
+        - application: hm-grunndata-api
+          namespace: teamdigihot
+          cluster: dev-gcp
   liveness:
     path: /internal/isAlive
     initialDelay: 5
@@ -26,7 +37,7 @@ spec:
   prometheus:
     enabled: true
     path: /metrics
-  env: 
+  env:
     - name: DB_ADMIN_USERNAME
       value: SrvHMDLese
     - name: DB_DATABASENAME
@@ -37,4 +48,3 @@ spec:
       value: {{ db_user_domain }}
     - name: WEB_HOST_PORT
       value: "5000"
-        

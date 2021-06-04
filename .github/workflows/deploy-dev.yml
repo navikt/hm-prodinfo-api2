@@ -1,4 +1,4 @@
-name: Build, deploy to dev-sbs and create release
+name: Build, deploy to dev-gcp and create release
 on:
   push:
     branches:
