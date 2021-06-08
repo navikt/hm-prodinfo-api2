@@ -2,8 +2,8 @@
 const {poolPromise } = require("../database/db");
 const fs = require("fs");
 //const mustacheExpress = require("mustache-express");
-const rawdata = fs.readFileSync("./query/queries.json");
-const queries = JSON.parse(rawdata);
+var rawdata = fs.readFileSync("./query/queries.json");
+var queries = JSON.parse(rawdata);
 let query = "";
 let enkelSide= false;
 let viseAllQueryResultat = false;
