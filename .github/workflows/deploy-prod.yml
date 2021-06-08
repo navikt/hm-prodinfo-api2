@@ -1,4 +1,4 @@
-name: Deploy to prod-sbs
+name: Deploy to prod-gcp
 on:
   release:
     types: [published]
