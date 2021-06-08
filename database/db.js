@@ -14,6 +14,7 @@ var config = {
   },
   options: {
     encrypt: true,
+    trustServerCertificate: true,
     database: process.env.DB_DATABASENAME,
     enableArithAbort: true,
     requestTimeout: 1000, //default is 15000ms, you can set it to 0 for no timeout

@@ -10,19 +10,13 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "node_modules/.bin/nodemon ./bin/www js",
+    "dev": "nodemon ./bin/www js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Arshad Kamran",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-||||||| 97c3b92
-    "@mapbox/node-pre-gyp": "^1.0.0",
-=======
-    "@mapbox/node-pre-gyp": "^1.0.5",
->>>>>>> afbe9cdbf87eda1ca23b16c3e656424288c86156
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
