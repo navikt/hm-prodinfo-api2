@@ -14,7 +14,7 @@ console.log("Views Path = " + viewsPath + "\n")
 console.log("Partials Path = " + partialsPath + "\n")
 console.log(".")
 
-// const fs = require("fs")
+const fs = require("fs")
 
 const indexRouter = require("./routes/index")
 
